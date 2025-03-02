@@ -8,14 +8,14 @@ return new class extends Migration {
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('username')->unique()->after('email'); // Tambahkan username
+            $table->string('username')->unique()->after('email');
         });
     }
 
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('username'); // Hapus jika rollback
+            $table->dropColumn('username');
         });
     }
 };
