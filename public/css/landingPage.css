@@ -1795,19 +1795,19 @@ section,
 }
 
 /*--------------------------------------------------------------
-  # Recent Posts Section
+  # Recent events Section
   --------------------------------------------------------------*/
-.recent-posts .post-item {
+.event .event-item {
     background-color: var(--surface-color);
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
-.recent-posts .post-item .post-img img {
+.event .event-item .event-img img {
     transition: 0.5s;
 }
 
-.recent-posts .post-item .post-date {
+.event .event-item .event-date {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1819,11 +1819,11 @@ section,
     font-weight: 500;
 }
 
-.recent-posts .post-item .post-content {
+.event .event-item .event-content {
     padding: 30px;
 }
 
-.recent-posts .post-item .post-title {
+.event .event-item .event-title {
     color: var(--heading-color);
     font-size: 20px;
     font-weight: 700;
@@ -1831,22 +1831,22 @@ section,
     margin-bottom: 15px;
 }
 
-.recent-posts .post-item .meta i {
+.event .event-item .meta i {
     font-size: 16px;
     color: var(--accent-color);
 }
 
-.recent-posts .post-item .meta span {
+.event .event-item .meta span {
     font-size: 15px;
     color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.recent-posts .post-item hr {
+.event .event-item hr {
     color: color-mix(in srgb, var(--default-color), transparent 80%);
     margin: 20px 0;
 }
 
-.recent-posts .post-item .readmore {
+.event .event-item .readmore {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -1855,18 +1855,18 @@ section,
     color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.recent-posts .post-item .readmore i {
+.event .event-item .readmore i {
     line-height: 0;
     margin-left: 6px;
     font-size: 16px;
 }
 
-.recent-posts .post-item:hover .post-title,
-.recent-posts .post-item:hover .readmore {
+.event .event-item:hover .event-title,
+.event .event-item:hover .readmore {
     color: var(--accent-color);
 }
 
-.recent-posts .post-item:hover .post-img img {
+.event .event-item:hover .event-img img {
     transform: scale(1.1);
 }
 
@@ -2144,43 +2144,43 @@ section,
 }
 
 /*--------------------------------------------------------------
-  # Blog Posts Section
+  # Blog events Section
   --------------------------------------------------------------*/
-.blog-posts article {
+.blog-events article {
     background-color: var(--surface-color);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     padding: 30px;
     height: 100%;
 }
 
-.blog-posts .post-img {
+.blog-events .event-img {
     max-height: 440px;
     margin: -30px -30px 0 -30px;
     overflow: hidden;
 }
 
-.blog-posts .title {
+.blog-events .title {
     font-size: 24px;
     font-weight: 700;
     padding: 0;
     margin: 30px 0;
 }
 
-.blog-posts .title a {
+.blog-events .title a {
     color: var(--heading-color);
     transition: 0.3s;
 }
 
-.blog-posts .title a:hover {
+.blog-events .title a:hover {
     color: var(--accent-color);
 }
 
-.blog-posts .meta-top {
+.blog-events .meta-top {
     margin-top: 20px;
     color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.blog-posts .meta-top ul {
+.blog-events .meta-top ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -2189,33 +2189,33 @@ section,
     margin: 0;
 }
 
-.blog-posts .meta-top ul li+li {
+.blog-events .meta-top ul li+li {
     padding-left: 20px;
 }
 
-.blog-posts .meta-top i {
+.blog-events .meta-top i {
     font-size: 16px;
     margin-right: 8px;
     line-height: 0;
     color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.blog-posts .meta-top a {
+.blog-events .meta-top a {
     color: color-mix(in srgb, var(--default-color), transparent 40%);
     font-size: 14px;
     display: inline-block;
     line-height: 1;
 }
 
-.blog-posts .content {
+.blog-events .content {
     margin-top: 20px;
 }
 
-.blog-posts .content .read-more {
+.blog-events .content .read-more {
     text-align: right;
 }
 
-.blog-posts .content .read-more a {
+.blog-events .content .read-more a {
     background: var(--accent-color);
     color: var(--contrast-color);
     display: inline-block;
@@ -2225,7 +2225,7 @@ section,
     border-radius: 4px;
 }
 
-.blog-posts .content .read-more a:hover {
+.blog-events .content .read-more a:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -2281,7 +2281,7 @@ section,
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.blog-details .post-img {
+.blog-details .event-img {
     margin: -30px -30px 20px -30px;
     overflow: hidden;
 }
@@ -2706,36 +2706,36 @@ section,
     font-size: 14px;
 }
 
-.recent-posts-widget .post-item {
+.event-widget .event-item {
     display: flex;
     margin-bottom: 15px;
 }
 
-.recent-posts-widget .post-item:last-child {
+.event-widget .event-item:last-child {
     margin-bottom: 0;
 }
 
-.recent-posts-widget .post-item img {
+.event-widget .event-item img {
     width: 80px;
     margin-right: 15px;
 }
 
-.recent-posts-widget .post-item h4 {
+.event-widget .event-item h4 {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.recent-posts-widget .post-item h4 a {
+.event-widget .event-item h4 a {
     color: var(--default-color);
     transition: 0.3s;
 }
 
-.recent-posts-widget .post-item h4 a:hover {
+.event-widget .event-item h4 a:hover {
     color: var(--accent-color);
 }
 
-.recent-posts-widget .post-item time {
+.event-widget .event-item time {
     display: block;
     font-style: italic;
     font-size: 14px;
