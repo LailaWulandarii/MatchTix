@@ -48,4 +48,8 @@ class User extends Authenticatable
             'priority' => 'boolean',
         ];
     }
+    public function preferences()
+    {
+        return $this->hasOne(Preference::class, 'user_id');
+    }
 }
