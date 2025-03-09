@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserHomeController;
 
 Route::get('/', function () {
@@ -18,3 +19,4 @@ Route::post('/login', [AuthController::class, 'processLogin'])->name('processLog
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/coba', [AuthController::class, 'coba'])->name('coba');
 Route::get('/home', [UserHomeController::class, 'home'])->name('home');
+Route::post('/create-preferences', [ProfileController::class, 'store'])->name('preferences.store');
