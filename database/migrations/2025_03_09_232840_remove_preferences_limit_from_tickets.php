@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tickets', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->decimal('price', 10, 2);
-            $table->string('description');
-            $table->timestamps();
+        Schema::table('tickets', function (Blueprint $table) {
+            $table->dropColumn('preferences_limit');
         });
     }
 
@@ -25,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tickets');
+        Schema::table('tickets', function (Blueprint $table) {
+            $table->integer('preferences_limit')->nullable();
+        });
     }
 };
