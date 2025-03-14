@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Event extends Model
 {
@@ -21,4 +22,8 @@ class Event extends Model
         'start_time',
         'end_time',
     ];
+    public function getImageUrlAttribute()
+    {
+        return Storage::url($this->image);
+    }
 }

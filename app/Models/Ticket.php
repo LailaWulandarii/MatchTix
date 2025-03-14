@@ -18,7 +18,5 @@ class Ticket extends Model
         'name',
         'price',
         'description',
-        'benefit',
-        'preferences_limit',
     ];
 }
